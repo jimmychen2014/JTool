@@ -14,6 +14,7 @@
 		1923D4B82308FE4C00DA4175 /* JToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1923D4B72308FE4C00DA4175 /* JToolUITests.swift */; };
 		1942E51A230B9B3C00C6DA10 /* NSLayoutAnchor+LayoutAnchorDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1942E519230B9B3C00C6DA10 /* NSLayoutAnchor+LayoutAnchorDSL.swift */; };
 		1942E51C230BADF500C6DA10 /* NSLayoutConstraint+LayoutConstraintActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1942E51B230BADF500C6DA10 /* NSLayoutConstraint+LayoutConstraintActivation.swift */; };
+		1942E523230BFA0F00C6DA10 /* UIView+ThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1942E522230BFA0F00C6DA10 /* UIView+ThemeStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		1923D4B92308FE4C00DA4175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1942E519230B9B3C00C6DA10 /* NSLayoutAnchor+LayoutAnchorDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+LayoutAnchorDSL.swift"; sourceTree = "<group>"; };
 		1942E51B230BADF500C6DA10 /* NSLayoutConstraint+LayoutConstraintActivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+LayoutConstraintActivation.swift"; sourceTree = "<group>"; };
+		1942E51D230BF9AA00C6DA10 /* JTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JTool-Bridging-Header.h"; sourceTree = "<group>"; };
+		1942E521230BFA0F00C6DA10 /* UIView+ThemeStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ThemeStyle.h"; sourceTree = "<group>"; };
+		1942E522230BFA0F00C6DA10 /* UIView+ThemeStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ThemeStyle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,9 @@
 			children = (
 				1942E519230B9B3C00C6DA10 /* NSLayoutAnchor+LayoutAnchorDSL.swift */,
 				1942E51B230BADF500C6DA10 /* NSLayoutConstraint+LayoutConstraintActivation.swift */,
+				1942E51D230BF9AA00C6DA10 /* JTool-Bridging-Header.h */,
+				1942E521230BFA0F00C6DA10 /* UIView+ThemeStyle.h */,
+				1942E522230BFA0F00C6DA10 /* UIView+ThemeStyle.m */,
 			);
 			path = JToolKit;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 				TargetAttributes = {
 					1923D49E2308FE4A00DA4175 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					1923D4B22308FE4C00DA4175 = {
 						CreatedOnToolsVersion = 10.3;
@@ -208,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1923D4A52308FE4A00DA4175 /* RootViewController.swift in Sources */,
+				1942E523230BFA0F00C6DA10 /* UIView+ThemeStyle.m in Sources */,
 				1923D4A32308FE4A00DA4175 /* AppDelegate.swift in Sources */,
 				1942E51C230BADF500C6DA10 /* NSLayoutConstraint+LayoutConstraintActivation.swift in Sources */,
 				1942E51A230B9B3C00C6DA10 /* NSLayoutAnchor+LayoutAnchorDSL.swift in Sources */,
@@ -364,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K333SFH5R;
 				INFOPLIST_FILE = JTool/Info.plist;
@@ -373,6 +383,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingting.JTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JToolKit/JTool-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K333SFH5R;
 				INFOPLIST_FILE = JTool/Info.plist;
@@ -391,6 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingting.JTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JToolKit/JTool-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
