@@ -1,0 +1,18 @@
+### macOS ###
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Xcode ###
+
+## User settings
+xcuserdata/
+*.xcuserstate
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
